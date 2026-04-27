@@ -2357,8 +2357,10 @@
 /singleton/reaction/deuterium
 	name = "Deuterium"
 	result = null
-	required_reagents = list(/datum/reagent/water = 10, /datum/reagent/toxin/phoron/oxygen = 5)
+	required_reagents = list(/datum/reagent/drink/ice = 10, /datum/reagent/toxin/phoron/oxygen = 5)
 	result_amount = 1
+	minimum_temperature = (-25 CELSIUS) - 100
+	maximum_temperature = -25 CELSIUS
 	mix_message = "The solution makes a loud cracking sound as it crystalizes."
 
 /singleton/reaction/deuterium/on_reaction(datum/reagents/holder, created_volume, reaction_flags)
